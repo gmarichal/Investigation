@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "titulo": "Aliens",
+        "director": "J. Cameron",
+        "anio": "1996",
+        "rating": "8.5"
+    },
+    {
+        "id": "2",
+        "titulo": "50 Shades of grey",
+        "director": "J. Cameron",
+        "anio": "2015",
+        "rating": "6.5"
+    }
+]
