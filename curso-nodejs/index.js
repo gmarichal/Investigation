@@ -1,8 +1,10 @@
 const express = require('express');
 const colors  = require('colors');
 const server  = express();
-
 const _serverPort = 3000;
+
+const fs = require('fs');
+
 
 server.listen(_serverPort, function() {
     console.log(('Conan server listening on port ' + _serverPort).green);
@@ -12,6 +14,19 @@ server.get('/', function(req, res) {
     res.send('<img src="https://thumbs.gfycat.com/FaroffCoarseBarnacle-size_restricted.gif"/>');
     res.end();
 });
+
+
+server.get('/ascii', function(req, res) {
+    fs.readFile('./conan.txt', function(err, data) {
+        if(err) { 
+            console.log(err);
+        }
+        res.send('<h3 style="text-align:center; display:block; font-family:monospace;">' + data + '</h3>');
+        //console.log(data.toString());
+    })
+    
+});
+
 
 /* OLD WAY...
 const http   = require('http');
