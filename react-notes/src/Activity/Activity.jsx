@@ -17,12 +17,22 @@ class Activity extends Component {
            
             <li key={this.activityId} className="list-group-item d-flex justify-content-between align-items-center">
             <h4>{this.activityTitle}</h4>
-            <div className="mb-0">{this.activityDescription}</div>
-                <span className="badge badge-pill badge-dark">{this.activityId}</span>
+            <p>{this.activityDescription}</p>
+            <span className="badge badge-pill badge-dark">{this.activityId}</span>
+            <span
+                onClick={ () => this.handleRemove(this.props.activityId)}
+            >&times;</span>
             </li>
        ) 
     }
+
+    
+handleRemove(id) {
+    alert('Removed: ' + id);
 }
+
+}
+
 
 
 export default Activity;

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 //Components
 import Activity from './Activity/Activity';
-import Header from './Header/header';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+
 
 class App extends Component {
-  
   constructor() {
     super();
     this.state = {
@@ -17,6 +19,7 @@ class App extends Component {
         {activityId: 4, activityTitle: 'Title 4', activityDescription: 'Nota 4'}
       ]
     };
+
   }
   
   render() {
@@ -49,13 +52,20 @@ class App extends Component {
 
           </div>      
 
-          <div className="activitysFooter">
-
+          <div className="activitiesFooter">
+              <Footer />
           </div>
       </div>
       
     );
   }
-}
 
+
+  removeActivity() {
+
+    
+  }
+
+
+}
 export default App;
