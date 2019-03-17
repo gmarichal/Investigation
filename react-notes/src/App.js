@@ -3,9 +3,10 @@ import './App.css';
 
 
 //Components
-import Activity from './Activity/Activity';
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
+import Activity     from './Activity/Activity';
+import Header       from './Header/Header';
+import Footer       from './Footer/Footer';
+import ImageGallery from './ImageGallery/ImageGallery';
 
 
 class App extends Component {
@@ -27,27 +28,29 @@ class App extends Component {
       <div>
         <Header 
           headerTitle='Liceo CIEI'
-          imgPath='http://www.liceociei.edu.uy/img/logo_ciei.png'
-
+          headerImgPath='http://www.liceociei.edu.uy/img/logo_ciei.png'
         />
+        <div>
+          <ImageGallery/>
 
-          <div id='activities'className="activitysBody mt-4">
-          <ul className="list-group">
-          {
-              this.state.Activities.map(activity => {
-                  return (
-                    <Activity 
-                      activityDescription={activity.activityDescription}
-                      activityTitle={activity.activityTitle}
-                      activityId={activity.activityId}
-                      key={activity.activityId} 
-                    />
-                    
-                  )
-              })
+        </div>
+        <div id='activities'className="activitysBody mt-4">
+        <ul className="list-group">
+        {
+            this.state.Activities.map(activity => {
+                return (
+                  <Activity 
+                    activityDescription={activity.activityDescription}
+                    activityTitle={activity.activityTitle}
+                    activityId={activity.activityId}
+                    key={activity.activityId} 
+                  />
+                  
+                )
+            })
 
-            }
-          </ul>
+          }
+        </ul>
           
 
           </div>      
@@ -68,4 +71,5 @@ class App extends Component {
 
 
 }
+
 export default App;

@@ -33,5 +33,10 @@ html {
   /*position: fixed;*/
   left: 0;
   width: 100%;
+  
+}
+
+.footerMessage {
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }

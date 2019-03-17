@@ -9,7 +9,9 @@ class Footer extends Component {
         return (
             <div>
                 <div className="row">
-                    <div className="col"></div>
+                    <div className="footerMessage col">
+                        <h1>Nuestra Propuesta</h1>
+                    </div>
                     <div className="col"></div>
                     <div className="col">
                         <ContactArea />
