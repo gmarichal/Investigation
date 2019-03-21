@@ -12,7 +12,7 @@ class Header extends Component {
     render() {
         return (
             <div>
-          <nav className="notesHeader navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <nav className="notesHeader navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <img className="mr-5" src={this.headerImgPath} alt="" width="72" height="72"></img>
             <a className="navbar-brand" href='/'>{ this.headerTitle }</a>
             <ul className="navbar-nav mr-auto">
