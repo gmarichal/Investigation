@@ -2,14 +2,13 @@ import React, {Component } from 'react';
 import './Activity.css'
 
 class Activity extends Component {
+
     constructor(props) {
         super(props);
         this.activityId = props.activityId;
         this.activityTitle = props.activityTitle;
         this.activityDescription = props.activityDescription;
         this.key = props.key;
-    
-
     }
 
     render() {
