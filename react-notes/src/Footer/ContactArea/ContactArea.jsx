@@ -8,16 +8,16 @@ class ContactArea extends Component {
         return (
             <div>
                 <form action='/'>
-                    <legend>CONTACTO</legend>
+                    <legend>Contáctanos</legend>
                     <div className="form-group">
                         <label for="contactName">Nombre</label>
                         <input type="text" className="form-control" id="contactName" placeholder="Ingresa tu nombre"/>
                         <label for="contactEmail">E-mail</label>
                         <input type="mail" className="form-control" id="contactEmail" placeholder="Ingresa tu Email"/>
                         <label for="contactDescription">Tu consulta</label>
-                        <textarea className="form-control" id="exampleTextarea" rows="3"/>
+                        <textarea className="form-control" id="exampleTextarea" rows="3" placeholder="Escribe tu consulta aqui"/>
                     </div>
-                    <button id="sendMail" type="submit" className="btn btn-primary" >Enviar</button>
+                    <button id="sendMail" type="submit" className="btn btn-primary">Enviar</button>
                 </form>
             </div>      
 
