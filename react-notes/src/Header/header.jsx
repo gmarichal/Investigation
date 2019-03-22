@@ -23,10 +23,10 @@ class Header extends Component {
                     <a className="nav-link" href="#activities">Actividades</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/">Galeria</a>
+                    <a className="nav-link" href="#photoGallery">Galeria</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/">Contacto</a>
+                    <a className="nav-link" href="#FooterSection">Contacto</a>
                 </li>
             </ul>
         

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './ImageGallery.css';
+import './ImageBanner.css';
 import Carousel from 'nuka-carousel';
 
 
-class ImageGallery extends Component {
+class ImageBanner extends Component {
 
     
     
@@ -44,4 +44,4 @@ class ImageGallery extends Component {
 }
 
 
-export default ImageGallery;
+export default ImageBanner;

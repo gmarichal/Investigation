@@ -6,7 +6,8 @@ import './App.css';
 import Activity     from './Activity/Activity';
 import Header       from './Header/Header';
 import Footer       from './Footer/Footer';
-import ImageGallery from './ImageGallery/ImageGallery';
+import ImageBanner from './ImageGallery/ImageBanner';
+import PhotoGallery from './ImageGallery/PhotoGallery';
 
 
 class App extends Component {
@@ -31,7 +32,7 @@ class App extends Component {
           headerImgPath='http://www.liceociei.edu.uy/img/logo_ciei.png'
         />
         <div>
-          <ImageGallery/>
+          <ImageBanner/>
 
         </div>
         <div id='activities'className="activitysBody mt-4">
@@ -53,9 +54,13 @@ class App extends Component {
         </ul>
           
 
-          </div>      
+          </div>  
+          <div id="photoGallery">
+          <PhotoGallery />
+            
+            </div>    
 
-          <div className="activitiesFooter">
+          <div id='FooterSection' className="activitiesFooter">
               <Footer />
           </div>
       </div>
