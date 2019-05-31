@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './ContactArea.css';
 
-var nodemailer = require('nodemailer');
-
-
-
-
+//var nodemailer = require('nodemailer');
 
 
 class ContactArea extends Component {
@@ -38,7 +34,7 @@ class ContactArea extends Component {
     
     handleSubmit(event) {
         alert('An email was submitted: ' + this.state.contactName + " " + this.state.contactEmail + " " + this.state.contactQuestion);
-        var transporter = nodemailer.createTransport({
+      /*  var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
               user: 'marichalgaston@gmail.com',
@@ -59,6 +55,7 @@ class ContactArea extends Component {
             } else {
               console.log('Email sent: ' + info.response);
             }
+       
           });
         
     
@@ -66,6 +63,7 @@ class ContactArea extends Component {
         
         
         event.preventDefault();
+        */
       }
 
     
